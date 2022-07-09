@@ -1,6 +1,6 @@
 from utils import generate_random_start, generate_from_seed
 from keras.models import load_model
-import tensorflow as tf
+#import tensorflow as tf
 from flask import Flask, render_template, request
 from wtforms import Form, TextField, validators, SubmitField, DecimalField, IntegerField
 
@@ -32,7 +32,7 @@ def load_keras_model():
     model = load_model('../models/train-embeddings-rnn.h5')
     # Required for model to work
     global graph
-    graph = tf.get_default_graph()
+    #graph = tf.get_default_graph()
 
 
 # Home page
